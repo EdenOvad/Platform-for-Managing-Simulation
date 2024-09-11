@@ -1,0 +1,24 @@
+/node_modules
+# Node.js modules
+node_modules/
+
+# Build artifacts
+build/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+env/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# Environment variables
+.env

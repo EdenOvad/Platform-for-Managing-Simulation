@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  text-align: left;
+  background-color: #f4f4f9;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header {
+  background-color: #003366;
+  /* גוון כהה ויוקרתי */
+  height: 100px;
+  /* גובה אחיד ויעיל */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* מיקום לוגו וניווט */
+  padding: 0 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* צל עדין יותר */
+  border-bottom: 5px solid #e0e0e0;
+  /* גבול עדין */
+}
+
+.header-logo {
+  color: #ffffff;
+  /* צבע טקסט לבן */
+  font-size: 1.5rem;
+  /* גודל פונט ברור */
+  font-weight: 700;
+  /* הדגשה */
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header-nav a {
+  color: #ffffff;
+  /* צבע קישורים לבן */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #c0c0c0;
+  /* צבע קישורים בה-hover */
+}
+
+.main-board {
+  margin: 20px;
+  padding: 20px;
+}
+
+.main-title {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.table-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.table-header {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  background-color: #f4f4f9;
+  font-weight: 700;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.table-footer {
+  background-color: #f4f4f9;
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+}
+
+.table-footer p {
+  margin: 0;
+  color: #333333;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #004080;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #003366;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.auth-wrapper .card-body {
+  background-color: #ffffff;
+  padding: 2em;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.auth-wrapper .card {
+  border-radius: 12px;
+}
+
+.custom-parameter-column {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* הוספת עיצוב לשם המשתמש */
+.user-name {
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* עיצוב לחלקי ה-navbar */
+.site-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.custom-parameter-column span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-parameter-column .param-name {
+  font-weight: 700;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
