@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: CI for Simulation Management Platform
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install backend dependencies
+      - name: Install dependencies
         run: |
           cd backend
           python -m pip install --upgrade pip
@@ -52,7 +52,7 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: |
           cd frontend
           npm install
